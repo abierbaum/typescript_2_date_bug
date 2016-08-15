@@ -1,0 +1,38 @@
+{
+  "name": "test_web_app",
+  "version": "0.0.1",
+  "description": "Test typescript bug",
+  "private": true,
+  "scripts": {
+    "rimraf": "rimraf",
+    "webpack": "webpack",
+
+    "clean": "npm cache clean && npm run rimraf -- node_modules doc coverage dist",
+      "clean:dist": "npm run rimraf -- dist",
+        "preclean:install": "npm run clean",
+
+    "build": "npm run build:dev",
+        "prebuild:dev": "npm run clean:dist",
+      "build:dev": "webpack --config webpack.dev.js --progress --profile --colors --display-error-details --display-cached",
+
+    "compile": "tsc"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.2",
+
+    "typescript": "^2.0.0-beta",
+
+    "awesome-typescript-loader": "1.1.1",
+    "ts-loader": "^0.8.2",
+
+    "html-webpack-plugin": "^2.21.0",
+
+    "webpack": "^1.13.1"
+  },
+  "engines": {
+    "node": ">= 4.2.1",
+    "npm": ">= 3"
+  }
+}

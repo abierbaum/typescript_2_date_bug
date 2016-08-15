@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noEmitHelpers": false,
+    "strictNullChecks": false,
+    "baseUrl": "./src",
+    "paths": [
+    ],
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "removeComments": false,
+    "noImplicitAny": true,
+    "outDir": "tsc_gen"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "config"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": false,
+    "useWebpackText": false
+  },
+  "compileOnSave": false,
+  "buildOnSave": false
+}

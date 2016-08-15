@@ -1,0 +1,12 @@
+# ignore the build area
+dist
+
+# Coverage directory used by istanbul
+coverage
+
+# Node
+node_modules
+
+# typings
+## /typings/
+
